@@ -14,9 +14,4 @@
 * **Bahasa Pemrograman:** Dart
 * **Environment:** Visual Studio Code & Android Emulator
 
-## 4. Cara Menjalankan Program
-1. Pastikan Flutter SDK dan Android Emulator sudah terkonfigurasi.
-2. Buka terminal pada direktori folder praktikum ini.
-3. Jalankan perintah berikut untuk mengunduh dependensi:
-   ```bash
-   flutter pub get
+
