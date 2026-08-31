@@ -1,4 +1,3 @@
-Markdown
 # 📱 Mobile Development Course
 
 Repository untuk menyimpan tugas, latihan, dan project selama mengikuti mata kuliah **Mobile Development**.
