@@ -1,17 +1,17 @@
-# my_first_app
+# Week 1: Mobile Development Ecosystem & Flutter Refresh
 
-A new Flutter project.
+## 1. Tujuan Praktikum
+* Memahami ekosistem pengembangan perangkat bergerak (*mobile development*).
+* Melakukan instalasi dan konfigurasi lingkungan kerja Flutter serta Android SDK.
+* Membuat aplikasi Flutter perdana (*profil mahasiswa*) menggunakan widget dasar.
 
-## Getting Started
+## 2. Fitur Utama Aplikasi
+* **Tampilan Profil:** Menampilkan informasi nama lengkap dan NIM mahasiswa menggunakan widget teks terstruktur.
+* **Elemen Visual Tambahan:** Memanfaatkan widget `Icon` dan `Column` untuk menyusun tata letak profil agar rapi di tengah layar.
 
-This project is a starting point for a Flutter application.
+## 3. Stack Teknologi
+* **Framework:** Flutter (Channel stable, v3.47.2)
+* **Bahasa Pemrograman:** Dart
+* **Environment:** Visual Studio Code & Android Emulator
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
