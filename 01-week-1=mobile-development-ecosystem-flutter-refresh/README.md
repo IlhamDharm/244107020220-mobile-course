@@ -16,7 +16,9 @@ Dokumentasi tugas praktikum **Week 1** pada mata kuliah Pemrograman Mobile. Prak
 
 Pemeriksaan status instalasi Flutter SDK dan dependensi terkait pada perangkat dilakukan melalui perintah `flutter doctor`.
 
-<img width="1258" height="282" alt="Screenshot 2026-08-31 083653" src="https://github.com/user-attachments/assets/d773b3ce-3df6-4c33-83b4-cc22b82c097d" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d773b3ce-3df6-4c33-83b4-cc22b82c097d" width="100%" alt="Flutter Doctor" />
+</p>
 
 **Hasil Pemeriksaan:**
 * **Flutter SDK:** Versi 3.47.2 (Channel stable) terpasang dengan baik pada Microsoft Windows 11.
@@ -31,12 +33,16 @@ Pemeriksaan status instalasi Flutter SDK dan dependensi terkait pada perangkat d
 ### A. Tampilan Profil Sederhana (Layout Tengah)
 Membuat halaman profil mahasiswa sederhana dengan memanfaatkan kombinasi `Column`, `Icon` (topi akademik), `Text` untuk Nama, NIM, dan Status Mahasiswa.
 
-<img width="622" height="1062" alt="Screenshot 2026-08-31 081330" src="https://github.com/user-attachments/assets/ec62f76a-b254-497c-a21a-fcb78546cb30"  />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ec62f76a-b254-497c-a21a-fcb78546cb30" width="300" alt="Profil Sederhana" />
+</p>
 
 ### B. Tampilan Kartu Identitas (Card Profile)
 Mengembangkan layout profil menjadi bentuk kartu (*Card*) yang memuat avatar pengguna (`CircleAvatar`), nama mahasiswa, serta detail NIM dan kelas.
 
-<img width="623" height="1062" alt="Screenshot 2026-08-31 090328" src="https://github.com/user-attachments/assets/02d1208c-18d8-4653-b0be-c95eb1996137" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/02d1208c-18d8-4653-b0be-c95eb1996137" width="300" alt="Kartu Profil" />
+</p>
 
 ---
 
