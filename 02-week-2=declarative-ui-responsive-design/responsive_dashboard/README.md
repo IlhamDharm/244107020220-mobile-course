@@ -31,13 +31,19 @@ Proyek ini dibangun untuk memenuhi tugas **Week 2 Codelab: Declarative UI & Resp
 ## 🖼️ Tangkapan Layar (Screenshots)
 
 ### 1. Mode Terang (Light Mode - Layar Sempit)
-<img width="1475" height="1127" alt="Screenshot 2026-09-07 105758" src="https://github.com/user-attachments/assets/4e05bafb-4f13-48c8-8b21-86a861a8b6f0" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4e05bafb-4f13-48c8-8b21-86a861a8b6f0" width="80%" alt="Mode Terang" />
+</p>
 
 ### 2. Mode Gelap (Dark Mode - Layar Sempit)
-<img width="1473" height="1117" alt="Screenshot 2026-09-07 105803" src="https://github.com/user-attachments/assets/e96860f6-cb18-4ebd-823d-c54b728b9bfd" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e96860f6-cb18-4ebd-823d-c54b728b9bfd" width="80%" alt="Mode Gelap" />
+</p>
 
 ### 3. Tampilan Academic Overview Final
-<img width="1465" height="1117" alt="Screenshot 2026-09-07 110744" src="https://github.com/user-attachments/assets/b96f86e2-d504-40ce-83f4-2d22aae5e4ac" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b96f86e2-d504-40ce-83f4-2d22aae5e4ac" width="80%" alt="Academic Overview Final" />
+</p>
 
 ---
 
