@@ -1,58 +1,90 @@
-# 🚀 Week 3: Navigation & State Management
+# 🚀 Week 3 — Navigation & State Management
 
-> Praktikum Flutter yang membahas declarative navigation dengan `go_router` serta pengelolaan state lokal dan global menggunakan Riverpod melalui aplikasi ToDo dan halaman statistik.
+> Praktikum Flutter yang membahas **declarative navigation** menggunakan `go_router` serta **state management** menggunakan Riverpod melalui aplikasi Navigation dan ToDo.
+
+---
 
 ## 📌 Tentang Project
 
-Project Week 3 terdiri dari dua aplikasi Flutter:
+Week 3 terdiri dari **dua aplikasi Flutter** yang dibuat untuk mempraktikkan konsep navigasi dan pengelolaan state:
 
-- `week3_navigation`: demonstrasi navigasi deklaratif berbasis URI dengan `go_router`.
-- `week3_todo`: aplikasi ToDo dengan state management Riverpod, filter data, penanganan state asynchronous, dan pengujian otomatis.
+### 🧭 `week3_navigation`
+
+Demonstrasi **declarative navigation** menggunakan `go_router`, termasuk routing berbasis URI, `ShellRoute`, dan `NavigationBar`.
+
+### ✅ `week3_todo`
+
+Aplikasi ToDo sederhana yang menerapkan **Riverpod** untuk mengelola state lokal dan global, filter data, asynchronous state, serta automated testing.
+
+---
 
 ## ✨ Fitur
 
-- 🧭 Declarative routing berbasis URI untuk route `/` dan `/stats`.
-- 🧱 Persistent `ShellRoute` dengan `NavigationBar`.
-- ➕ CRUD ToDo: tambah melalui modal dialog, checklist selesai, dan hapus data.
-- 🔎 Filter ToDo: Semua, Aktif, dan Selesai menggunakan `SegmentedButton`.
-- ⏳ Penanganan siklus `AsyncValue`: Loading, Error, dan Success.
-- 🔄 Invalidasi state dan retry menggunakan `ref.invalidate`.
-- 🧪 Automated unit test dan widget test.
+### Navigation
+
+* 🧭 Declarative routing berbasis URI
+* 🛣️ Route `/` dan `/stats`
+* 🧱 Persistent `ShellRoute`
+* 🧭 Bottom navigation menggunakan `NavigationBar`
+
+### ToDo
+
+* ➕ Menambahkan ToDo melalui modal dialog
+* ☑️ Menandai ToDo sebagai selesai
+* 🗑️ Menghapus ToDo
+* 🔎 Filter berdasarkan status:
+
+  * Semua
+  * Aktif
+  * Selesai
+* 📊 Halaman statistik ToDo
+* ⏳ Penanganan `AsyncValue`:
+
+  * Loading
+  * Error
+  * Success
+* 🔄 Retry dan invalidasi state menggunakan `ref.invalidate`
+* 🧪 Unit test dan widget test
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Flutter:** 3.x
-- **State management:** `flutter_riverpod` v3.4.3
-- **Routing:** `go_router` v18.0.1
-- **Testing:** `flutter_test`
-- **Bahasa:** Dart
+| Teknologi        | Versi / Keterangan |
+| ---------------- | ------------------ |
+| **Flutter**      | 3.x                |
+| **Dart**         | Dart SDK           |
+| **Riverpod**     | v3.4.3             |
+| **go_router**    | v18.0.1            |
+| **flutter_test** | Automated testing  |
 
-## 📁 Struktur Folder
+---
+
+## 📁 Struktur Project
 
 ```text
-03-week-3=Navigation & State Management/
+03-week-3-Navigation-State-Management/
+│
 ├── week3_navigation/
 │   ├── lib/
 │   ├── test/
 │   └── pubspec.yaml
+│
 ├── week3_todo/
 │   ├── lib/
 │   ├── test/
 │   └── pubspec.yaml
-├── screenshots/
-│   ├── 01_home_navigation.png
-│   ├── 02_todo_empty.png
-│   ├── 03_async_products.png
-│   ├── 04_refactor_todo_filter.png
-│   └── 05_stats_page.png
+│
 └── README.md
 ```
 
-## 🚀 Cara Menjalankan
+---
 
-Pastikan Flutter 3.x dan Dart SDK telah terpasang, kemudian jalankan setiap aplikasi dari foldernya masing-masing.
+## ⚙️ Cara Menjalankan
 
-### Aplikasi Navigation
+Pastikan Flutter sudah terinstall pada perangkat.
+
+### 🧭 Navigation
 
 ```bash
 cd week3_navigation
@@ -60,7 +92,7 @@ flutter pub get
 flutter run
 ```
 
-### Aplikasi ToDo
+### ✅ ToDo
 
 ```bash
 cd week3_todo
@@ -68,39 +100,118 @@ flutter pub get
 flutter run
 ```
 
-## 🧪 Hasil Pengujian
+---
+
+## 🧪 Pengujian
 
 ### Static Analysis
 
+```bash
+flutter analyze
+```
+
+Hasil:
+
 ```text
-$ flutter analyze
 No issues found!
 ```
 
 ### Automated Tests
 
+```bash
+flutter test
+```
+
+Hasil:
+
 ```text
-$ flutter test
 00:03 +2: All tests passed!
 ```
 
-## 📸 Tangkapan Layar
+---
 
-| Tampilan 1 | Tampilan 2 | Tampilan 3 |
-|---|---|---|
-| **Navigasi Dasar**<br>![Navigasi Dasar](screenshots/01_home_navigation.png) | **ToDo Kosong**<br>![ToDo Kosong](screenshots/02_todo_empty.png) |  |
-| **AsyncValue Produk**<br>![AsyncValue Produk](screenshots/03_async_products.png) | **Filter ToDo**<br>![Filter ToDo](screenshots/04_refactor_todo_filter.png) | **Statistik**<br>![Statistik](screenshots/05_stats_page.png) |
+## 📸 Screenshots
+
+### 🧭 Navigation
+
+| Navigasi Dasar                                                                                          | Statistik                                                                                               |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/d51600f6-32d9-4a29-b085-75edb54156dc" width="220"> | <img src="https://github.com/user-attachments/assets/b311615c-fdc0-43b5-9283-673bff578ccc" width="220"> |
+
+### ✅ ToDo
+
+| ToDo Kosong                                                                                             | Filter ToDo                                                                                             |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/53d6b2c9-ab41-49fe-a850-112bde97499f" width="220"> | <img src="https://github.com/user-attachments/assets/a9b7df93-1364-4a31-ac66-f6006f72c9fb" width="220"> |
+
+### ⏳ AsyncValue
+
+| AsyncValue Produk                                                                                       |
+| ------------------------------------------------------------------------------------------------------- |
+| <img width="220" src="https://github.com/user-attachments/assets/a6b6249b-aee1-4a38-8665-df7c7f95fde5" > |
+
+---
 
 ## 💡 Refleksi Praktikum
 
-- **Kapan `setState` cukup vs Riverpod:** `setState` cukup untuk ephemeral atau local state pada widget, misalnya input form di dalam modal. Riverpod lebih tepat untuk app state global yang dibagikan antar layar dan perlu diuji secara independen.
-- **`context.go` vs `context.push`:** `context.go` mengubah URI deklaratif untuk tab navigasi utama, sedangkan `context.push` menumpuk route pada navigation stack untuk alur detail sementara agar tombol back kembali ke layar sebelumnya dengan tepat.
-- **Keamanan `AsyncValue`:** Penggunaan `AsyncValue` mencegah impossible states yang dapat terjadi jika `isLoading`, `isError`, dan `isSuccess` disimpan sebagai boolean terpisah. Pattern matching melalui `.when()` memaksa seluruh state ditangani secara aman dan mengurangi risiko null pointer.
-- **Perbaikan hasil kode AI:** `StateProvider` yang deprecated diganti dengan class `Notifier` atau `AsyncNotifier` modern. Mutasi state langsung melalui `.state =` juga dipindahkan ke method `.setFilter()` untuk menyelesaikan warning `invalid_use_of_protected_member`.
+### `setState` vs Riverpod
+
+`setState` cukup digunakan untuk **ephemeral atau local state** yang hanya dibutuhkan oleh satu widget, seperti input form pada modal.
+
+Sementara itu, **Riverpod** lebih sesuai untuk application state yang perlu digunakan oleh beberapa widget atau layar serta dapat diuji secara independen.
+
+### `context.go` vs `context.push`
+
+`context.go` digunakan untuk berpindah ke lokasi atau tab utama berdasarkan URI, sedangkan `context.push` digunakan untuk menambahkan route baru ke dalam navigation stack sehingga tombol **Back** dapat kembali ke halaman sebelumnya.
+
+### Keamanan `AsyncValue`
+
+Penggunaan `AsyncValue` membantu menghindari **impossible states** yang dapat terjadi jika status `loading`, `error`, dan `success` disimpan sebagai beberapa boolean terpisah.
+
+Pattern `.when()` membuat setiap kondisi harus ditangani dengan jelas:
+
+```dart
+asyncValue.when(
+  loading: () => ...,
+  error: (error, stack) => ...,
+  data: (data) => ...,
+);
+```
+
+### Perbaikan Kode AI
+
+Beberapa bagian kode hasil generate AI diperbaiki agar mengikuti API Riverpod terbaru.
+
+Perubahan yang dilakukan antara lain:
+
+* Mengganti `StateProvider` yang sudah deprecated.
+* Menggunakan `Notifier` dan `AsyncNotifier`.
+* Memindahkan mutasi state ke method seperti `.setFilter()`.
+* Menghindari penggunaan langsung `.state` dari luar notifier untuk menghilangkan warning `invalid_use_of_protected_member`.
+
+---
+
+## 🎯 Tujuan Pembelajaran
+
+Melalui praktikum ini, beberapa konsep yang dipelajari adalah:
+
+* Declarative navigation pada Flutter
+* Routing menggunakan `go_router`
+* Penggunaan `ShellRoute`
+* State management menggunakan Riverpod
+* Local dan global state
+* Asynchronous state dengan `AsyncValue`
+* Provider invalidation dan retry
+* Unit testing
+* Widget testing
+* Penggunaan API Riverpod modern
+
+---
 
 ## 👤 Author
 
-**Ilham Dharma Atmaja**  
-NIM: `244107020220`  
-Kelas: `TI-3D`  
-Repository: [244107020220-mobile-course](https://github.com/IlhamDharm/244107020220-mobile-course.git)
+**Ilham Dharma Atmaja**
+
+* **NIM:** `244107020220`
+* **Kelas:** `TI-3D`
+* **Repository:** [244107020220-mobile-course](https://github.com/IlhamDharm/244107020220-mobile-course.git)
