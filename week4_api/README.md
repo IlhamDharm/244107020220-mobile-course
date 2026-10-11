@@ -137,38 +137,61 @@ komentar berbasis `postId` yang mengekspos state asynchronous kepada UI.
 │   ├── post_test.dart
 │   └── comment_model_test.dart
 ├── docs/                            # Dokumentasi tambahan
-├── screenshots/                     # Galeri bukti aplikasi dan QA
+├── screenshot/                      # Screenshot aplikasi yang didokumentasikan
 ├── pubspec.yaml
 └── README.md
 ```
 
 ## Galeri Screenshot
 
-> Gambar di bawah adalah placeholder path yang disiapkan untuk dokumentasi.
-> Simpan hasil tangkapan layar dengan nama tersebut di folder `screenshots/` agar
-> galeri tampil di GitHub atau viewer Markdown lainnya.
+Screenshot aplikasi yang disediakan berada di folder `screenshot/` (singular).
+Nama file dibuat tanpa spasi agar path relatif berfungsi konsisten pada GitHub.
 
-| Preview | Kondisi | Keterangan |
-| --- | --- | --- |
-| ![Loading state](screenshots/01_loading_state.png) | Loading | `screenshots/01_loading_state.png` - indikator `CircularProgressIndicator` saat aplikasi pertama kali memuat data dari server. |
-| ![Success list](screenshots/02_success_list.png) | Success | `screenshots/02_success_list.png` - daftar postingan menggunakan `PostTile` beserta dukungan pull-to-refresh. |
-| ![Error state](screenshots/03_error_state.png) | Error | `screenshots/03_error_state.png` - penanganan error jaringan yang bersahabat, misalnya saat mode pesawat/offline, lengkap dengan tombol **Coba lagi**. |
-| ![Pagination scroll](screenshots/04_pagination_scroll.png) | Pagination | `screenshots/04_pagination_scroll.png` - proses memuat halaman berikutnya ketika scroll mencapai batas bawah list. |
-| ![Detail page](screenshots/05_detail_page.png) | Detail | `screenshots/05_detail_page.png` - navigasi GoRouter ke `/post/:id` yang menampilkan judul dan isi lengkap postingan. |
-| ![Unit tests passed](screenshots/06_unit_test_passed.png) | QA | `screenshots/06_unit_test_passed.png` - bukti terminal `flutter test` dengan `+6: All tests passed!` dan `flutter analyze` dengan `No issues found!`. |
+### 1. Daftar posts berhasil dimuat
 
-```text
-screenshots/
-├── 01_loading_state.png
-├── 02_success_list.png
-├── 03_error_state.png
-├── 04_pagination_scroll.png
-├── 05_detail_page.png
-└── 06_unit_test_passed.png
-```
+Halaman **Posts API** menampilkan hasil dari endpoint `/posts`, termasuk judul
+dan isi ringkas setiap post.
 
-Path pada kolom **Preview** akan menampilkan gambar secara otomatis setelah file
-placeholder tersedia.
+![Daftar posts dari API](screenshot/01-posts-list-awal.png)
+
+### 2. Kondisi timeout
+
+Ketika request terlalu lama, UI menampilkan pesan timeout yang ramah dan tombol
+**Coba lagi**.
+
+![Pesan error timeout](screenshot/02-error-timeout.png)
+
+### 3. Kondisi koneksi gagal
+
+Saat aplikasi tidak dapat terhubung ke server, UI menampilkan pesan koneksi
+gagal dan menyediakan tombol retry.
+
+![Pesan error koneksi](screenshot/03-error-koneksi.png)
+
+### 4. Daftar posts setelah berhasil dimuat
+
+Screenshot ini juga memperlihatkan daftar post setelah request berhasil.
+
+![Daftar posts](screenshot/04-posts-list.png)
+
+### 5. Bagian bawah daftar posts
+
+Tangkapan layar memperlihatkan item bernomor 91–100 di bagian bawah daftar.
+
+![Bagian bawah daftar posts](screenshot/05-posts-list-bawah.png)
+
+### 6. Pagination sedang memuat
+
+Halaman **Posts Paged** menampilkan item 1–10 dan indikator loading di bawah
+daftar, yang menunjukkan request halaman berikutnya sedang berlangsung.
+Screenshot ini membuktikan state loading pagination; tidak digunakan sebagai
+bukti bahwa halaman berikutnya sudah selesai dimuat.
+
+![Loading halaman berikutnya pada pagination](screenshot/06-posts-pagination-loading.png)
+
+Screenshot loading awal, halaman detail `/post/:id`, dan hasil terminal test
+tidak tersedia di folder screenshot yang diberikan, sehingga tidak ditambahkan
+sebagai bukti gambar.
 
 ## Hasil Pengujian & Verifikasi
 
