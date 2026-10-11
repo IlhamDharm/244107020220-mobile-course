@@ -105,7 +105,7 @@ perintah `flutter test` digunakan.
 Screenshot terminal berikut menunjukkan `flutter analyze` selesai tanpa
 masalah dan `flutter test` berhasil (`All tests passed!`).
 
-![Hasil flutter analyze dan flutter test](<screenshot/Hasil Pengujian Analyze dan Test.png>)
+![Hasil flutter analyze dan flutter test](screenshot/analyze-test-results.png)
 
 ## 4. Dokumentasi screenshot
 
@@ -117,20 +117,20 @@ perilaku catatan saat offline, lalu kondisi sesudah sync.
 
 Belum ada catatan tersimpan. Penghitung dirty bernilai nol.
 
-![Halaman catatan awal](<screenshot/Halaman Utama.png>)
+![Halaman catatan awal](screenshot/notes-empty.png)
 
 ### 4.2 Form tambah catatan
 
 Dialog menyediakan judul dan isi opsional sebelum catatan disimpan.
 
-![Dialog tambah catatan](<screenshot/Menambah Catatan Baru.png>)
+![Dialog tambah catatan](screenshot/add-note-dialog.png)
 
 ### 4.3 Pengaturan mode offline
 
 Mode offline dapat diaktifkan untuk menguji perilaku cache dan sync secara
 deterministik.
 
-![Pengaturan mode offline](<screenshot/Screenshot 2026-10-11 215116.png>)
+![Pengaturan mode offline](screenshot/offline-settings.png)
 
 ### 4.4 Catatan saat offline
 
@@ -138,14 +138,14 @@ Screenshot memperlihatkan satu catatan berstatus `Dirty` dan satu catatan
 `Tersinkron`. Banner di bawah menyatakan sync tidak tersedia saat mode offline
 aktif; ini adalah hasil yang diharapkan untuk skenario tersebut.
 
-![Catatan dirty pada mode offline](<screenshot/Screenshot 2026-10-11 215152.png>)
+![Catatan dirty pada mode offline](screenshot/notes-offline.png)
 
 ### 4.5 Setelah sinkronisasi
 
 Setelah mode offline dinonaktifkan dan sync selesai, penghitung dirty menjadi
 nol dan catatan ditandai `Tersinkron`.
 
-![Catatan setelah sync](<screenshot/Screenshot 2026-10-11 215229.png>)
+![Catatan setelah sync](screenshot/notes-synced.png)
 
 ## 6. AI Challenge — perbandingan storage
 
