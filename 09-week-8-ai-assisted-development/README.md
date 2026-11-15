@@ -138,17 +138,10 @@ Exit code: 0
 
 Berikut adalah tangkapan layar pengujian fitur pencarian dan *empty state* pada aplikasi:
 
-### 1. Default Empty State (Sebelum Ada Catatan)
-Tampilan awal saat belum ada catatan yang dibuat.
-![Default Empty State](screenshots/Screenshot%202026-11-15%20143259.png)
-
-### 2. Query Cocok (Pencarian Berhasil)
-Tampilan ketika kata kunci `"belanja"` diketik pada *search bar*, berhasil menyaring catatan yang relevan.
-![Query Cocok](screenshots/Screenshot%202026-11-15%20143424.png)
-
-### 3. Query Tidak Cocok (Empty Search State)
-Tampilan ketika kata kunci `"beli"` tidak ditemukan di catatan, memunculkan ikon `search_off` dan pesan *"Tidak ada catatan yang cocok dengan \"beli\""*.
-![Empty Search State](screenshots/Screenshot%202026-11-15%20143437.png)
+| 1. Default Empty State | 2. Query Cocok (Filter) | 3. Query Tidak Cocok (Empty Search) |
+|:---:|:---:|:---:|
+| <img src="screenshots/Screenshot%202026-11-15%20143259.png" width="260" alt="Default Empty State" /> | <img src="screenshots/Screenshot%202026-11-15%20143424.png" width="260" alt="Query Cocok" /> | <img src="screenshots/Screenshot%202026-11-15%20143437.png" width="260" alt="Empty Search State" /> |
+| *Kondisi awal belum ada catatan* | *Pencarian kata kunci `"belanja"`* | *Empty state kata kunci `"beli"`* |
 
 ---
 
